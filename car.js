@@ -6,6 +6,7 @@ var data={};
 
 //Read data from carprice json and assign to variable data and 
 //retun the data in value
+//Use fs.readfilesync  to read the Json file
 
 car.readCarData=function() {
     console.log("readCarData");
@@ -14,13 +15,14 @@ car.readCarData=function() {
 
     return data;
 };
-//Find the maximum priced car in the data given in carprice.json
+//Find the maximum priced car, its model and all other features color,door etc
+// in the data given in carprice.json
 // and return the same
-car.maxCarPrice = function() {
-    var maxCarPrice=0;
+car.maxPricedCar = function() {
+    var maxPricedCar;
    //write your code here
    
-    return maxCarPrice;
+    return maxPricedCar;
 
 };
 
@@ -32,7 +34,7 @@ car.findCarPrice = function(carname,model,color) {
 };
 
 
-/// Calling the function in the order.
+/// Calling the function
 car.readCarData();
-car.maxCarPrice();
 car.findCarPrice("BMW","series 3","red");
+car.maxPricedCar();
