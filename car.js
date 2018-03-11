@@ -3,9 +3,9 @@ var car = {};
 //Global variable to store cardata
 var data={};
 
-//Read data from carprice json and assign to variable data and 
+// access the data from carprice js  and assign to variable data and 
 //retun the data in value
-//Use fs.readfilesync  to read the Json file
+
 
 car.readCarData=function() {
     console.log("readCarData");
@@ -44,5 +44,6 @@ car.maxPricedCar = function() {
 
 /// Calling the function
 car.readCarData();
+// call the funtion to find the price of a BMW series 3 red car
 car.findCarPrice("BMW","series 3","red");
 car.maxPricedCar();
