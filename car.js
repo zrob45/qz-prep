@@ -1,6 +1,5 @@
-
+var carDataFile=require('./carpricedata.js');
 var car = {};
-
 //Global variable to store cardata
 var data={};
 
@@ -11,28 +10,37 @@ var data={};
 car.readCarData=function() {
     console.log("readCarData");
     // Write your code here 
-
-
+    
     return data;
 };
-//Find the maximum priced car, its model and all other features color,door etc
-// in the data given in carprice.json
-// and return the same
-car.maxPricedCar = function() {
-    var maxPricedCar;
-   //write your code here
-   
-    return maxPricedCar;
 
-};
 
 //Find the price of one car as passed as argument and return  the out put in console
 car.findCarPrice = function(carname,model,color) {
+    console.log("findCarPrice");
     var carprice=0;
    // write your code here
+
+
+   // printing the return value in console
+   console.log("carprice.........."+carprice);
    return carprice;
 };
 
+//Find the maximum priced car name , its model, number of doors, its price
+// in the data given in carprice.json
+// and return the same
+car.maxPricedCar = function() {
+    console.log("maxPricedCar");
+    var maxPricedCar;
+   //write your code here
+  
+
+    // printing the return value in console
+    console.log("maxPricedCar.........."+maxPricedCar);
+    return maxPricedCar;
+
+};
 
 /// Calling the function
 car.readCarData();
