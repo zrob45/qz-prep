@@ -56,6 +56,7 @@ quiz.question_04 = function(foo, bar) {
   //   Return an object,
   //   each object property value must be a function
   // ----------------------------------------
+  return 'Error: Question 04 not implemented';
 };
 
 quiz.question_05 = function(someObject) {
@@ -68,7 +69,7 @@ quiz.question_05 = function(someObject) {
 };
 
 // ----------------------------------------
-//   SECTION 02 - Objects
+//   SECTION 02 - OBJECTS
 // ----------------------------------------
 
 quiz.question_06 = function(data, carName, model, color) {
@@ -110,7 +111,7 @@ quiz.question_08 = function(data) {
 };
 
 // ----------------------------------------
-//   SECTION 03 - Array Functions
+//   SECTION 03 - ARRAY FUNCTIONS
 // ----------------------------------------
 
 quiz.question_09 = function(input) {
@@ -164,11 +165,11 @@ quiz.question_11 = function(input) {
   // Eample output: 'Bob, Sue'
   // ---------------------------------------------------------------
 
-  var res = input.filter(
+  var res = input.reduce(
     function(/* TODO args */) {
       // TODO your code here
     },
-    0 /*TODO set correct starting value*/,
+    0 /* TODO set correct starting value */,
   );
   return res;
 };
@@ -186,7 +187,7 @@ quiz.question_12 = function(input) {
   var compare = function(/* TODO args */) {
     // TODO your code here
   };
-  return input.sort(sort);
+  return input.sort(compare);
 };
 
 module.exports = quiz;

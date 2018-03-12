@@ -1,4 +1,5 @@
 var quiz = require('./exercise.js');
+var carData = require('./carData');
 
 // ----------------------------------------
 //   BASICS
@@ -12,85 +13,50 @@ console.log(q1);
 var q2 = quiz.question_02();
 console.log(q2);
 
-/*
-// ----------------------------------------
-//   QUESTION 02
-// ----------------------------------------
-var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var q3 = quiz.question_03();
+console.log(q3);
 
-var q2a = quiz.q2.a(arr);
-console.log(q2a);
+var q4 = quiz.question_04();
+console.log(q4);
 
-var q2b = quiz.q2.b(arr);
-console.log(q2b);
+var q5 = quiz.question_05();
+console.log(q5);
 
 // ----------------------------------------
-//   QUESTION 03
+//   OBJECTS
 // ----------------------------------------
-var q3a = quiz.q3.a();
-console.log(q3a);
 
-var q3b = quiz.q3.b('BMW', 'series 3', 'red');
-console.log(q3b);
+var q6 = quiz.question_06(carData, 'BMW', 'series 3', 'red');
+console.log(q6);
 
-var q3c = quiz.q3.c();
-console.log(q3c);
+var q7 = quiz.question_07(carData);
+console.log(q7);
+
+var q8 = quiz.question_08(carData);
+console.log(q8);
 
 // ----------------------------------------
-//   QUESTION 04
+//   ARRAY FUNCTIONS
 // ----------------------------------------
-var input = [
-  { name: 'Henrik', time: 47.72 },
-  { name: 'Andre', time: 47.93 },
-  { name: 'Victor', time: 48.34 },
-  { name: 'Manfred', time: 48.4 },
-  { name: 'Sebastian', time: 48.53 },
-  { name: 'Alexis', time: 48.54 },
+var skierData = [
   { name: 'Clement', time: 48.58 },
+  { name: 'Henrik', time: 47.72 },
+  { name: 'Sebastian', time: 48.53 },
+  { name: 'Andre', time: 47.93 },
+  { name: 'Ted', time: 102.3 },
+  { name: 'Manfred', time: 48.4 },
+  { name: 'Alexis', time: 48.54 },
+  { name: 'Victor', time: 48.34 },
 ];
 
-var q4a = quiz.q4.a(input);
-console.log(q4a);
+var q9 = quiz.question_09(skierData);
+console.log(q9);
 
-var q4b = quiz.q4.b(input);
-console.log(q4b);
+var q10 = quiz.question_10(skierData);
+console.log(q10);
 
-var q4c = quiz.q4.c(['Henrik', 'Andre', 'Victor', 'Manfred']);
-console.log(q4c);
-*/
-//var carDATA= {
-//"cars": {
-//"Nissan": [
-//{"model":"Sentra", "doors":4, "price": 17000},
-//{"model":"Maxima", "doors":4,  "price": 18000},
-//{"model":"GTR", "doors":2,  "price": 210000},
-//{"model":"Altima", "doors":2,  "price": 23300},
-//{"model":"LEAF", "doors":2,  "price": 29900},
-//{"model":"Maxima", "doors":2,  "price": 33270},
-//{"model":"Versa", "doors":2,  "price": 12110},
-//{"model":"Juke", "doors":2,  "price": 20900}
-//],
-//"Ford": [
-//{"model":"Taurus", "doors":4, "price": 21000},
-//{"model":"Escort", "doors":4,  "price": 22000},
-//{"model":"Expedition", "doors":4,  "price": 64447},
-//{"model":"Fusion", "doors":4,  "price": 24000},
-//{"model":"Fiesta ", "doors":4,  "price": 13995},
-//{"model":"EcoSport ", "doors":4,  "price": 20995},
-//{"model":"Edge ", "doors":4,  "price": 30215},
-//{"model":"Explorer ", "doors":4,  "price": 32985}
-//],
+var q11 = quiz.question_11(['Henrik', 'Andre', 'Victor', 'Manfred']);
+console.log(q11);
 
-//"BMW": [
-//{"model":"series 3", "doors":4,
-//"color":[
-//{"id":"red", "price": 35000 },
-//{"id":"silver", "price": 40000 }]
-//},
-//{"model":"series 6", "doors":[
-//{"door":"2", "price": 86700 },
-//{"door":"4", "price": 70200 }]
-//}
-//]
-//}
-//}
+var q12 = quiz.question_12(skierData);
+console.log(q12);
