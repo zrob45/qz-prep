@@ -1,126 +1,117 @@
-var quiz = {}; 
+var quiz = {};
 
 // ---------------------------------------------------------------------
 // 1.001 QUIZ 2018
 //
-// All quiz questions are in this file. If you would like to run 
+// All quiz questions are in this file. If you would like to run
 // your code there is a separate file, run.js(), which you can use
-// and manipulate to your liking. The quiz is open book and open web. 
-// Feel free to google for answers as you would in the real world. 
+// and manipulate to your liking. The quiz is open book and open web.
+// Feel free to google for answers as you would in the real world.
 // Good luck!
 // ---------------------------------------------------------------------
-
 
 // ----------------------------------------
 //   SECTION 01 - BASICS
 // ----------------------------------------
 
 quiz.question_00 = function() {
-
-    // ----------------------------------------
-    //   QUESTION 00
-    //   Is "counter" a global variable?
-    //   Return true or false.
-    // ----------------------------------------
-    var counter = 0;
-    return 'Error: Question 01 not implemented';
-
+  // ----------------------------------------
+  //   QUESTION 00
+  //   Is "counter" a global variable?
+  //   Return true or false.
+  // ----------------------------------------
+  var counter = 0;
+  return 'Error: Question 01 not implemented';
 };
 
-
 quiz.question_01 = function() {
-
-    // ----------------------------------------
-    //   QUESTION 01
-    //   Return a string that says "Hi!"
-    // ----------------------------------------
-    return 'Error: Question 01 not implemented';
-
+  // ----------------------------------------
+  //   QUESTION 01
+  //   Return a string that says "Hi!"
+  // ----------------------------------------
+  return 'Error: Question 01 not implemented';
 };
 
 quiz.question_02 = function() {
-    // ----------------------------------------
-    //   QUESTION 02
-    //   Return an array of objects
-    // ----------------------------------------
-    return 'Error: Question 02 not implemented';
+  // ----------------------------------------
+  //   QUESTION 02
+  //   Return an array of objects
+  // ----------------------------------------
+  return 'Error: Question 02 not implemented';
 };
 
 quiz.question_03 = function() {
-    // ----------------------------------------
-    //   QUESTION 03
-    //   Return an array of objects. 
-    //   Each object needs to have 
-    //   a 'name' and 'age' property
-    // ----------------------------------------
-    return 'Error: Question 03 not implemented';
+  // ----------------------------------------
+  //   QUESTION 03
+  //   Return an array of objects.
+  //   Each object needs to have
+  //   a 'name' and 'age' property
+  // ----------------------------------------
+  return 'Error: Question 03 not implemented';
 };
 
 quiz.question_04 = function(foo, bar) {
-    // ----------------------------------------
-    //   QUESTION 04
-    //   Return an object, 
-    //   each object property value must be a function
-    // ----------------------------------------
+  // ----------------------------------------
+  //   QUESTION 04
+  //   Return an object,
+  //   each object property value must be a function
+  // ----------------------------------------
 };
 
 quiz.question_05 = function(someObject) {
-    // ----------------------------------------
-    //   QUESTION 05
-    //   Add the property 'age' to someObject
-    //   Give 'age' any value you like.
-    // ----------------------------------------
-    return 'Error: Question 05 not implemented';
+  // ----------------------------------------
+  //   QUESTION 05
+  //   Add the property 'age' to someObject
+  //   Give 'age' any value you like.
+  // ----------------------------------------
+  return 'Error: Question 05 not implemented';
 };
 
-quiz.question_06 = function() {
-  // ---------------------------------------------------------------
-  // Read in the data from the carprice json file.
-  // Retun the results of the file as a JavaScript object.
-  // Use fs.readFileSync
-  // ---------------------------------------------------------------
+// ----------------------------------------
+//   SECTION 02 - Objects
+// ----------------------------------------
 
-  var data = {};
-  // TODO your code here
-
-  return data;
-};
-
-quiz.question_07 = function() {
-  // ---------------------------------------------------------------
-  // Find the maximum priced car from the data given in carprice.json
-  // Return an object with properties: make, model, doors, price
-  // ex: '{ make: 'Tesla', model: 'Model S', doors: 4, price: 80000 }'
-  // ---------------------------------------------------------------
-
-  var data = q3.a();
-  var maxPricedCar = {};
-  // TODO your code here
-
-  return maxPricedCar;
-};
-
-quiz.question_08 = function(carName, model, color) {
+quiz.question_06 = function(data, carName, model, color) {
   // ---------------------------------------------------------------
   // Find the price of the car whose name, model, and color are provided
   // as arguments to this function.
   // Return the price.
   // ---------------------------------------------------------------
 
-  var data = q3.a();
   var carPrice = 0;
   // TODO your code here
 
   return carPrice;
 };
 
-// ---------------------------------------------------------------------
-// QUESTION 04
-//
-// You are provided racer results data from the 2018 olympics.
-// Use what you know about forEach, map, filter, and reduce to complete
-// the following problem.
-// ---------------------------------------------------------------------
+quiz.question_07 = function(data) {
+  // ---------------------------------------------------------------
+  // Find the maximum priced car from the data given in carprice.json
+  // Return an object with properties: make, model, doors, price
+  // ex: '{ make: 'Tesla', model: 'Model S', doors: 4, price: 80000 }'
+  // ---------------------------------------------------------------
+
+  var maxPricedCar = {};
+  // TODO your code here
+
+  return maxPricedCar;
+};
+
+quiz.question_08 = function(data) {
+  // ---------------------------------------------------------------
+  // Add a new car, "Honda", to the data set with
+  // model: "Civic", doors: 4, price: 18840
+  // Return the updated data
+  // ---------------------------------------------------------------
+
+  // TODO your code here
+
+  return data;
+};
+
+// ----------------------------------------
+//   SECTION 03 - Array Functions
+// ----------------------------------------
 
 quiz.question_09 = function(input) {
   // ---------------------------------------------------------------
@@ -148,7 +139,7 @@ quiz.question_10 = function(input) {
   // Using filter, map, and the provided input, return an array of skier names whose
   // times are under 48.5.
   //
-  // Example input: [{ name: 'Bob', time: 45.00 }, { name: 'Sue', time: 50 }]
+  // Example input: [{ name: 'Bob', time: 45.0 }, { name: 'Sue', time: 50.0 }]
   // Example output: ['Bob']
   // ---------------------------------------------------------------
 
@@ -180,6 +171,22 @@ quiz.question_11 = function(input) {
     0 /*TODO set correct starting value*/,
   );
   return res;
+};
+
+quiz.question_12 = function(input) {
+  // ---------------------------------------------------------------
+  // Write a sort callback function to sort the skier objects
+  // based on their race time in descending order.
+  // Return an array of skier objects.
+  //
+  // Example input: [{ name: 'Sue', time: 50.0 }, { name: 'Bob', time: 45.0 }]
+  // Example output: [{ name: 'Bob', time: 45.0 }, { name: 'Sue', time: 50.0 }]
+  // ---------------------------------------------------------------
+
+  var compare = function(/* TODO args */) {
+    // TODO your code here
+  };
+  return input.sort(sort);
 };
 
 module.exports = quiz;
