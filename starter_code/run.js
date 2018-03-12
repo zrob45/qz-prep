@@ -1,17 +1,18 @@
 var quiz = require('./exercise.js');
 
 // ----------------------------------------
-//   QUESTION 01
+//   BASICS
 // ----------------------------------------
-var q1a = quiz.q1.a();
-console.log(q1a);
+var q0 = quiz.question_00();
+console.log(q0);
 
-var q1b = quiz.q1.b();
-console.log(q1b);
+var q1 = quiz.question_01();
+console.log(q1);
 
-var q1c = quiz.q1.c();
-console.log(q1c);
+var q2 = quiz.question_02();
+console.log(q2);
 
+/*
 // ----------------------------------------
 //   QUESTION 02
 // ----------------------------------------
@@ -56,3 +57,4 @@ console.log(q4b);
 
 var q4c = quiz.q4.c(['Henrik', 'Andre', 'Victor', 'Manfred']);
 console.log(q4c);
+*/
