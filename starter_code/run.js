@@ -60,7 +60,7 @@ var cardata= {
             }
         ]
     }
-}
+};
 
 var q6 = quiz.question_06(carData, 'BMW', 'series 3', 'red');
 console.log(q6);
