@@ -72,9 +72,9 @@ quiz.question_05 = function(someObject) {
 //   SECTION 02 - OBJECTS
 // ----------------------------------------
 
-quiz.question_06 = function(data, carName, model, door) {
+quiz.question_06 = function(data, carName, model, doors) {
   // ---------------------------------------------------------------
-  // Find the price of the car whose name, model, and door are provided
+  // Find the price of the car whose name, model, and doors are provided
   // as arguments to this function.
   // Return the price.
   // ---------------------------------------------------------------
@@ -87,7 +87,7 @@ quiz.question_06 = function(data, carName, model, door) {
 
 quiz.question_07 = function(data) {
   // ---------------------------------------------------------------
-  // Find the maximum priced car from the data given in carprice.js
+  // Find the maximum priced car from the data given in cardata.js
   // Return an object with properties: make, model, doors, price
   // ex: '{ make: 'Tesla', model: 'Model S', doors: 4, price: 80000 }'
   // ---------------------------------------------------------------
