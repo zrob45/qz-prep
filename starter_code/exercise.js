@@ -87,7 +87,7 @@ quiz.question_06 = function(data, carName, model, doors) {
 
 quiz.question_07 = function(data) {
   // ---------------------------------------------------------------
-  // Find the maximum priced car from the data given in cardata.js
+  // Find the maximum priced car from the data given in cardata variable
   // Return an object with properties: make, model, doors, price
   // ex: '{ make: 'Tesla', model: 'Model S', doors: 4, price: 80000 }'
   // ---------------------------------------------------------------
@@ -100,7 +100,7 @@ quiz.question_07 = function(data) {
 
 quiz.question_08 = function(data) {
   // ---------------------------------------------------------------
-  // Add a new car  in the carprice.js data, "Honda", to the data set with
+  // Add a new car object to the given cardata object, "Honda", to the data set with
   // model: "Civic", doors: 4, price: 18840
   // Return the updated data
   // ---------------------------------------------------------------
