@@ -72,9 +72,9 @@ quiz.question_05 = function(someObject) {
 //   SECTION 02 - OBJECTS
 // ----------------------------------------
 
-quiz.question_06 = function(data, carName, model, color) {
+quiz.question_06 = function(data, carName, model, door) {
   // ---------------------------------------------------------------
-  // Find the price of the car whose name, model, and color are provided
+  // Find the price of the car whose name, model, and door are provided
   // as arguments to this function.
   // Return the price.
   // ---------------------------------------------------------------
@@ -87,7 +87,7 @@ quiz.question_06 = function(data, carName, model, color) {
 
 quiz.question_07 = function(data) {
   // ---------------------------------------------------------------
-  // Find the maximum priced car from the data given in carprice.json
+  // Find the maximum priced car from the data given in carprice.js
   // Return an object with properties: make, model, doors, price
   // ex: '{ make: 'Tesla', model: 'Model S', doors: 4, price: 80000 }'
   // ---------------------------------------------------------------
@@ -100,7 +100,7 @@ quiz.question_07 = function(data) {
 
 quiz.question_08 = function(data) {
   // ---------------------------------------------------------------
-  // Add a new car, "Honda", to the data set with
+  // Add a new car  in the carprice.js data, "Honda", to the data set with
   // model: "Civic", doors: 4, price: 18840
   // Return the updated data
   // ---------------------------------------------------------------
