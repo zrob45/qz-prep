@@ -53,10 +53,6 @@ var cardata= {
                 "color":[ 
                 {"id":"red", "price": 35000 },
                 {"id":"silver", "price": 40000 }]
-            },
-            {"model":"series 6", "doors":[
-                {"door":"2", "price": 86700 },
-                {"door":"4", "price": 70200 }]
             }
         ]
     }
