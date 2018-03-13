@@ -25,7 +25,7 @@ console.log(q5);
 //   OBJECTS
 // ----------------------------------------
 
-var cardata= {
+var carData= {
     "cars": {
         "Nissan": [
             {"model":"Sentra", "doors":4, "price": 17000},
