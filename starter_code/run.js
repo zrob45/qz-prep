@@ -68,7 +68,7 @@ var q8 = quiz.question_08(carData);
 console.log(q8);
 
 // ----------------------------------------
-//   ARRAY FUNCTIONS
+//   ARRAY AND FUNCTIONS
 // ----------------------------------------
 var skierData = [
   { name: 'Clement', time: 48.58 },
