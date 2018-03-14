@@ -58,7 +58,7 @@ var carData= {
     }
 };
 
-var q6 = quiz.question_06(carData, 'BMW', 'series 3', 'red');
+var q6 = quiz.question_06(carData, 'BMW', 'series 3', 4 , 'red');
 console.log(q6);
 
 var q7 = quiz.question_07(carData);
