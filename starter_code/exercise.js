@@ -72,7 +72,7 @@ quiz.question_05 = function(someObject) {
 //   SECTION 02 - OBJECTS
 // ----------------------------------------
 
-quiz.question_06 = function(data, carName, model, doors) {
+quiz.question_06 = function(data, carName, model, doors, color) {
   // ---------------------------------------------------------------
   // Find the price of the car whose name, model, and doors are provided
   // as arguments to this function.
