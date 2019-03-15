@@ -27,7 +27,7 @@ quiz.question_00 = function() {
 quiz.question_01 = function() {
   // ----------------------------------------
   //   QUESTION 01
-  //   Return a string that says "Hi!"
+  //   Return a string that says "Hello World!"
   // ----------------------------------------
   return 'Error: Question 01 not implemented';
 };
@@ -45,7 +45,7 @@ quiz.question_03 = function() {
   //   QUESTION 03
   //   Return an array of objects.
   //   Each object needs to have
-  //   a 'name' and 'age' property
+  //   a 'shape' and 'color' property
   // ----------------------------------------
   return 'Error: Question 03 not implemented';
 };
